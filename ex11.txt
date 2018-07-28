@@ -1,0 +1,27 @@
+
+//نمره دانشجو را میگیرد و کاراکتر چاپ میکند
+
+import java.util.Scanner;
+public class Ex11 {
+	
+	public static void main (String[]args)
+	{
+		float grade;
+		Scanner input = new Scanner(System.in);
+		grade = input.nextFloat();
+		
+		if(grade <= 10)
+			System.out.print("A");
+		else if(grade >= 10 && grade <= 12)
+			System.out.print("B");
+		else if(grade >= 12 && grade <= 14)
+			System.out.print("C");
+		else if(grade >= 14 && grade <=18)
+			System.out.print("D");
+		else if(grade >= 18 && grade <= 20)
+			System.out.print("F");
+		else 
+			System.out.print("K");
+		
+	}
+}
